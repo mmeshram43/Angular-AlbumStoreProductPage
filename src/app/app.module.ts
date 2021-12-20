@@ -9,6 +9,7 @@ import { ProductDescriptionComponent } from './product-description/product-descr
 import { ProductService } from './product.service';
 import { RouterModule, Routes } from '@angular/router';
 import { ProductListComponent } from './product-list/product-list.component';
+import { ProductTracklistingComponent } from './product-tracklisting/product-tracklisting.component';
 
 const appRoutes : Routes =[
   {path:'products', component:ProductListComponent },
@@ -19,7 +20,8 @@ const appRoutes : Routes =[
   declarations: [
     AppComponent,
     ProductPageComponent,
-    ProductDescriptionComponent
+    ProductDescriptionComponent,
+    ProductTracklistingComponent
   ],
   imports: [
     BrowserModule,
