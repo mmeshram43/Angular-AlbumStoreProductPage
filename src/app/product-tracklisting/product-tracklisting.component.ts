@@ -12,7 +12,7 @@ export class ProductTracklistingComponent implements OnInit {
 
   constructor( private _productService :ProductService) { }
 
-  albumInfo : any ;
+  albumInfo : Album | any ;
 
   ngOnInit() {
     this._productService.getAlbum(1).subscribe(response => this.albumInfo = response );
