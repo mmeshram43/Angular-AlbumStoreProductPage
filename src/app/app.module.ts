@@ -7,22 +7,26 @@ import { AppComponent } from './app.component';
 import { ProductPageComponent } from './product-page/product-page.component';
 import { ProductDescriptionComponent } from './product-description/product-description.component';
 import { ProductService } from './product.service';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { ProductListComponent } from './product-list/product-list.component';
+
+const appRoutes : Routes =[
+  {path:'products', component:ProductListComponent },
+  {path:'products/:id', component:ProductPageComponent }
+];
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductPageComponent,
-    ProductDescriptionComponent,
-    ProductListComponent
+    ProductDescriptionComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     ProductService,
-    RouterModule
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [
     ProductService
