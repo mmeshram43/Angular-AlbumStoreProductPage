@@ -5,12 +5,11 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { ProductPageComponent } from './product-page/product-page.component';
-import { ProductDescriptionComponent } from './product-description/product-description.component';
+// import { ProductDescriptionComponent } from './product-description/product-description.component';
 import { ProductService } from './product.service';
 import { RouterModule, Routes } from '@angular/router';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductTracklistingComponent } from './product-tracklisting/product-tracklisting.component';
-import { ProductPipe } from './product.pipe';
 
 const appRoutes : Routes =[
   {path:'products', component:ProductListComponent },
@@ -21,9 +20,9 @@ const appRoutes : Routes =[
   declarations: [
     AppComponent,
     ProductPageComponent,
-    ProductDescriptionComponent,
+    // ProductDescriptionComponent,
     ProductTracklistingComponent,
-    ProductPipe
+    ProductListComponent
   ],
   imports: [
     BrowserModule,
