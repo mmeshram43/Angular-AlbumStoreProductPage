@@ -13,7 +13,8 @@ import { ProductTracklistingComponent } from './product-tracklisting/product-tra
 
 const appRoutes : Routes =[
   {path:'products', component:ProductListComponent },
-  {path:'products/:id', component:ProductPageComponent }
+  {path:'products/:id', component:ProductPageComponent },
+  { path:'',redirectTo:'products',pathMatch:'full' }
 ];
 
 @NgModule({
