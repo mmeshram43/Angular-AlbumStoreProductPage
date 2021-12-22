@@ -10,6 +10,7 @@ import { ProductService } from './product.service';
 import { RouterModule, Routes } from '@angular/router';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductTracklistingComponent } from './product-tracklisting/product-tracklisting.component';
+import { ProductPipe } from './product.pipe';
 
 const appRoutes : Routes =[
   {path:'products', component:ProductListComponent },
@@ -21,7 +22,8 @@ const appRoutes : Routes =[
     AppComponent,
     ProductPageComponent,
     ProductDescriptionComponent,
-    ProductTracklistingComponent
+    ProductTracklistingComponent,
+    ProductPipe
   ],
   imports: [
     BrowserModule,
